@@ -1,0 +1,22 @@
+评论系统正在开发中。。。
+在config.php进行个人配置.
+如果不运行在SAE：
+	在$con = mysql_connect(SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT,SAE_MYSQL_USER,SAE_MYSQL_PASS);中，更换以下字段：
+		SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT更换为数据库主机，一般是'localhost'；
+		SAE_MYSQL_USER更换为用户名，记得圈上单引号；
+		SAE_MYSQL_PASS更换为SQL密码，照样圈上单引号。
+	在mysql_select_db("app_wedclife", $con);字段，更换：
+		app_wedclife为SQL表名。
+$password = "111";中111为你自己设定的管理密码，在/admin新建记录的时候需要输入的密码。
+然后把sql.sql导入数据库。如果是SAE，需要手动新建数据库。
+admin.php文件为你添加记录的页面，建议更换该文件的名字防止密码被暴力破解。
+进入 域名/admin.php，新建第一条记录。否则index.php会报成吨的错误。
+HTML底部的部分都在index.php里，想改随意改。但是出于对我连续十多天每天12小时以上工作时间的尊重，希望能保留以下链接：
+<a href="http://wedc.cc">WEDC</a>
+<a href="https://github.com/imwyh/life">项目地址</a>
+这几天在备案中，访问子域名：blog.wedc.cc找我。
+欢迎交换友链 。
+代码不易，特别这是我第一次写出完整的php代码。我知道有非常多的不足之处。也许这只是很多大神两三天的工作量。对于很多人，这是他们的一小步；但这一定是我的一大步。
+有BUG，建议，真诚欢迎通过blog.wedc.cc找我。也希望有大神不吝赐教，带我走一段路。
+所有知识自学自W3school。
+————2015年1月16日 2点
