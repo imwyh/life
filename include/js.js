@@ -243,7 +243,7 @@ function lastpage() { //				最后一页
 function slide(k) { //					滑动操作
 	if (!browse) return;
 	if (k) {
-		if ($("#day li").last().offset().top - scrollTop > 0.9 * $(window).height()) return;
+		if ($(".no0").offset().top - scrollTop > 0.6 * $(window).height()) return;
 		$("#time").animate({
 			top: "+=" + slide_speed + "px"
 		},
@@ -255,7 +255,7 @@ function slide(k) { //					滑动操作
 		slide_speed += 25;
 		setTimeout("slide(true)", 300);
 	} else {
-		if ($(".no0").offset().top - scrollTop < 0.15 * $(window).height()) return;
+		if ($("#day li").last().offset().top - scrollTop < 0.6 * $(window).height()) return;
 		$("#time").animate({
 			top: "-=" + slide_speed + "px"
 		},
